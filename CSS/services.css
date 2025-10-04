@@ -1,0 +1,89 @@
+*{
+    --Clor-black: #000;
+    --Clor-white: #fff;
+    --Clor-lightBlack: #444;
+    --Clor-darkWhite: #e5e5e5;
+}
+#banner .banner-contents .para span{
+    font-size: clamp(1.25rem, -0.179rem + 7.143vw, 11.25rem);
+}
+/* services */
+#services{
+    padding-bottom: 4vw;
+}
+#services .right{
+    width: 30%;
+}
+#services .left{
+    width: 70%;
+}
+#services .service-contents{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    padding: 2vw;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 0 3vw 0;
+    z-index: 2;
+    &:hover{
+        box-shadow: inset 0 0 5px 5px rgba(0, 0, 0, 0.144);
+    }
+}
+#services .even{
+    flex-direction: row-reverse;
+}
+#services .right{
+    height: 100%;
+    z-index: 2;
+    & > .sr-contents{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        & > span{
+            font-size: 4vw;
+        }
+    }
+}
+#services .diff-divider{
+    margin: 0 2%;
+    & > .divider-line{
+        height: 90%;
+    }
+}
+#services .left{
+    height: 100%;
+    z-index: 2;
+    & > .sl-contents{
+        height: 100%;
+        padding: 1vw;
+        & > .headers > h4{
+            font-size: 2vw;
+            font-weight: 700;
+        }
+        & > p{
+            font-size: 1.4vw;
+            margin: 1.5vw 0;
+        }
+    }
+}
+#services .left ul{
+    list-style-type: none;
+    padding: 0;
+    & > li{
+        margin: 1vw 0;
+        display: flex;
+        align-items: center;
+        font-size: 1.4vw;
+        & > span{
+            font-size: 1.4vw;
+            margin-right: .5vw;
+        }
+    }
+}
+/* services */
