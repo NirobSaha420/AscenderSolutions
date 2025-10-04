@@ -5,4 +5,4 @@
 
 ## License
 
-This is commercial project and for any kind of use, copy, edit or publish.
+This is commercial project and not for any kind of use, copy, edit or publish.
