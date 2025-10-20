@@ -1,7 +1,7 @@
 ## Demo link 
 
 **You can view live demo of the project here :
-[AscenderSolutions](https://nirobsaha420.github.io/AscenderSolutions/index.html)**
+[AscenderSolutions](https://nirobsaha420.github.io/AscenderSolutions/)**
 
 ## License
 
