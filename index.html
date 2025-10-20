@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ascender Solutions</title>
+    <title>Ascender Solutions - Ascending Businesses</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Ready to Ascend? We evolve visions & ascend businesses with personalized digital solutions. Your partner for Web, Design, SEO & Marketing services.">
     <!-- PRELOADS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +31,20 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css" media="print" onload="this.media='all'">
     <style>
+      *{
+        font-display: swap;
+      }
+      #preloader{
+        width: 100vw;
+        height: 100vh;
+        background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
+        filter: grayscale(100%);
+        background-size: 50%;
+        position: fixed;
+        z-index: 9999;
+      }
       #banner{
-        background: linear-gradient(135deg, #000 0%, #111 50%, #000 100%);
+        background: linear-gradient(135deg, #252525 0%, #151515 50%, #252525 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -56,7 +70,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-parent">
             <li class="nav-item">
               <a class="nav-link magnet active" aria-current="page" href="./index.html">Home</a>
             </li>
@@ -77,108 +91,118 @@
       </div>
     </nav>
   <!-- navbar -->
+  <header>
   <!-- banner -->
    <section id="banner">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <div class="banner-contents">
-                    <div class="sub-container">
-                      <div class="text-auto-effect">
-                        <span class="auto-text-blank-span auto-type-main-heading"></span>
-                        <span class="main-heading-text magnet"> Your Vision With</span>
-                      </div>
-                      <h2 class="text-center magnet text-target">Ascenders</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="banner-contents">
+                  <div class="sub-container">
+                    <div class="text-auto-effect">
+                      <span class="auto-text-blank-span auto-type-main-heading"></span>
+                      <span class="main-heading-text magnet"> Your Vision With</span>
                     </div>
-                    <div class="para">
-                      <span class="auto-type-sub-main-heading"></span>
-                    </div>
-                    <div class="btnn">
-                      <button class="magnet"><a href="./contact.html">Begin Your Ascent <span><i class="fa-solid fa-arrow-right"></i></span></a></button>
-                    </div>
+                    <h2 class="text-center magnet">Ascenders</h2>
                   </div>
-                  <div class="graphic-elements">
-                      <div class="circle circle-1"></div>
-                      <div class="circle circle-2"></div>
-                      <div class="circle circle-3"></div>
-                      <div class="circle circle-4"></div>
-                      <div class="line line-1"></div>
-                      <div class="line line-2"></div>
-                      <div class="line line-3"></div>
-                      <div class="line line-4"></div>
+                  <div class="para">
+                    <span class="auto-type-sub-main-heading"></span>
                   </div>
-              </div>
-          </div>
-      </div>
-   </section>
-  <!-- banner -->
+                  <div class="btnn">
+                    <button class="magnet"><a href="./contact.html">Begin Your Ascent <span><i class="fa-solid fa-arrow-right"></i></span></a></button>
+                  </div>
+                </div>
+                <div class="graphic-elements">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <div class="circle circle-3"></div>
+                    <div class="circle circle-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+<!-- banner -->
+</header>
   <!-- services -->
    <section id="services">
     <div class="container">
       <div class="row">
         <h4 class="sec-headings text-target">Our Specialties</h4>
         <div class="col-lg-4">
-          <div class="service-contents">
-            <span class="magnet"><i class="fa-solid fa-paintbrush"></i></span>
+          <div class="service-contents hover-y10 animation-appear-left">
+            <div class="icon magnet box-shadow-white">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
             <h4 class="text-center">Graphics Design</h4>
             <p class="text-center">We craft visuals that don’t just look good—they communicate your unique identity. From custom logos to marketing materials, every design is tailored to tell your specific story and captivate your target audience.</p>
+            <div class="corner"></div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-contents">
-            <span class="magnet"><i class="fa-solid fa-laptop-code"></i></span>
+          <div class="service-contents hover-y10 animation-appear-left">
+            <div class="icon magnet box-shadow-white">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
             <h4 class="text-center">Web Development</h4>
             <p class="text-center">Your website should be a dynamic digital home for your business, not a 
               template. We build fully custom, responsive websites designed to convert visitors into customers, 
               perfectly aligned with your goals.</p>
+              <div class="corner"></div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-contents">
-            <span class="magnet"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+          <div class="service-contents hover-y10 animation-appear-left">
+            <div class="icon magnet box-shadow-white">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
             <h4 class="text-center">SEO</h4>
             <p class="text-center">Get found by the people who are searching for you. We develop personalized 
               SEO strategies to elevate your search rankings, drive qualified organic traffic, and build 
               sustainable growth for your market.</p>
+              <div class="corner"></div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-contents">
-            <span class="magnet"><i class="fa-solid fa-chart-simple"></i></span>
+          <div class="service-contents hover-y10 animation-appear-right">
+            <div class="icon magnet box-shadow-white">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
             <h4 class="text-center">Digital Marketing</h4>
             <p class="text-center">Go beyond generic ads to build genuine connections. We create tailored 
               marketing strategies that engage your audience across platforms, driving measurable growth and 
               loyal community engagement.</p>
+              <div class="corner"></div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-contents">
-            <span class="magnet"><i class="fa-solid fa-message"></i></span>
+          <div class="service-contents hover-y10 animation-appear-right">
+            <div class="icon magnet box-shadow-white">
+              <i class="fa-solid fa-message"></i>
+            </div>
             <h4 class="text-center">Personal Consultation</h4>
             <p class="text-center">Your ascent begins with a clear vision. We listen to your goals, analyze 
-              your challenges, and craft a bespoke roadmap tailored exclusively to elevate your business and define your strategic path.</p>
+              your challenges, and craft a bespoke roadmap tailored exclusively to elevate your business and 
+              define your strategic path.</p>
+              <div class="corner"></div>
           </div>
         </div>
         <div class="col-lg-4">
-          <div class="service-contents">
-            <span class="magnet"><i class="fa-solid fa-rectangle-ad"></i></span>
+          <div class="service-contents hover-y10 animation-appear-right">
+            <div class="icon magnet box-shadow-white">
+              <i class="fa-solid fa-rectangle-ad"></i>
+            </div>
             <h4 class="text-center">Social Media Ads</h4>
             <p class="text-center">Your social ads should connect with ready-to-buy customers,
                not just a broad audience. We build and manage custom campaigns on platforms 
                like Facebook and Instagram, designed to drive qualified leads and sales 
                aligned with your revenue goals.</p>
+               <div class="corner"></div>
           </div>
         </div>
         <div class="more">
-          <a href="./services.html" class="magnet">More <span><i class="fa-solid fa-right-long"></i></span></a>
+          <a href="./services.html" class="magnet">Learn More <span><i class="fa-solid fa-right-long"></i></span></a>
         </div>
-        <div class="graphic-elements">
-          <div class="line line-1 graphic-line-white"></div>
-          <div class="line line-2 graphic-line-white"></div>
-          <div class="line line-3 graphic-line-white"></div>
-          <div class="line line-4 graphic-line-white"></div>
-      </div>
-      </div>
     </div>
    </section>
   <!-- services -->
@@ -188,7 +212,7 @@
       <div class="row">
         <h4 class="sec-headings text-target">Our Ascent</h4>
         <div class="about-contents">
-          <div class="left" style="z-index: 9;">
+          <div class="left animation-appear-left">
             <h4 class="magnet">Ascending Businesses to New Heights -</h4>
             <p>At Ascender Solutions, we believe every business has the potential to reach 
               new summits. Founded on the principle that digital excellence should be 
@@ -199,22 +223,18 @@
                 business.</b> We set out to change that by building a team of specialists who 
               listen first and strategize second.</p>
               <div class="more">
-                <a href="./about.html" class="magnet">More <span><i class="fa-solid fa-right-long"></i></span></a>
+                <a href="./about.html" class="magnet">Learn More <span><i class="fa-solid fa-right-long"></i></span></a>
               </div>
           </div>
-          <div class="right">
+          <div class="right animation-appear-right">
             <div class="img">
               <img src="./images/ascender-solutions-about.webp" alt="About Our Achievements and promises" loading="lazy">
             </div>
           </div>
         </div>
         <div class="graphic-elements">
-          <div class="circle circle-1"></div>
-          <div class="circle circle-3"></div>
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
+          <div class="circle circle-1" style="background: #000000a1;"></div>
+          <div class="circle circle-3" style="background: #000000a1;"></div>
       </div>
       </div>
     </div>
@@ -256,12 +276,6 @@
             </div>
           </div>
         </div>
-        <div class="graphic-elements">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
-      </div>
       </div>
     </div>
    </section>
@@ -273,7 +287,7 @@
         <h4 class="sec-headings text-target">The Ascender Contrast</h4>
         <div class="diff-contents">
           <div class="diff-containers">
-            <div class="diff-main diff-standard">
+            <div class="diff-main diff-standard hover-y10 animation-appear-left">
               <div class="header text-center">
                 <h4>The Standard Approach</h4>
                 <span><i class="fa-regular fa-circle"></i></span>
@@ -291,9 +305,9 @@
             <div class="diff-divider">
               <div class="divider-line"></div>
               <div class="vs-circle magnet">VS</div>
-              <div class="divider-line"></div>
+              <div class="divider-line divider-line2"></div>
             </div>
-            <div class="diff-main diff-ascender">
+            <div class="diff-main diff-ascender hover-y10 animation-appear-right">
               <div class="header text-center">
                 <h4>The Ascender Way</h4>
                 <span class="magnet"><i class="fa-solid fa-gem"></i></span>
@@ -310,12 +324,9 @@
             </div>
           </div>
         </div>
-        <div class="graphic-elements">
-          <div class="line line-1 graphic-line-white"></div>
-          <div class="line line-2 graphic-line-white"></div>
-          <div class="line line-3 graphic-line-white"></div>
-          <div class="line line-4 graphic-line-white"></div>
-      </div>
+        <div class="more">
+          <a href="./about.html" class="magnet">Learn More <span><i class="fa-solid fa-right-long"></i></span></a>
+        </div>
       </div>
     </div>
    </section>
@@ -329,9 +340,9 @@
         </div>
         <div class="portfolio-grid">
             <!-- Portfolio Item 1 -->
-            <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item hover-y10 animation-appear-left" data-category="web" style=" .animation-appear-left{scale: 0.6;}">
                 <div class="portfolio-img">
-                    <div style="width:100%; height:100%; background:linear-gradient(45deg, #f0f0f0, #e0e0e0); display:flex; align-items:center; justify-content:center;">
+                    <div style="width:100%; height:100%; background-color: #ccccccc5; display:flex; align-items:center; justify-content:center;">
                         <span style="color:#888; font-size:1.5rem;"><div class="img">
                           <img src="./images/portfolio/graphics-design-watch-logo-creative.webp" loading="lazy" alt="Creative logo for a e-commerce watch brand with instant brand identity">
                         </div></span>
@@ -348,9 +359,9 @@
             </div>
             
             <!-- Portfolio Item 2 -->
-            <div class="portfolio-item" data-category="ecommerce">
+            <div class="portfolio-item hover-y10 animation-appear-left" data-category="ecommerce" style=" .animation-appear-left{scale: 0.6;}">
                 <div class="portfolio-img">
-                    <div style="width:100%; height:100%; background:linear-gradient(45deg, #f0f0f0, #e0e0e0); display:flex; align-items:center; justify-content:center;">
+                    <div style="width:100%; height:100%; background-color: #ccccccc5; display:flex; align-items:center; justify-content:center;">
                         <span style="color:#888; font-size:1.5rem;"><div class="img">
                           <img src="./images/portfolio/graphics-design-printed-t-shirt.webp" loading="lazy" alt="On demand trendy printed T-shirt design">
                         </div></span>
@@ -361,15 +372,15 @@
                         <span class="portfolio-tag">Graphics Design</span>
                         <span class="portfolio-tag">business Product</span>
                     </div>
-                    <h4>Garments Product</h4>
+                    <h4>Clothing Product</h4>
                     <p>Translated a brand's ethos into wearable art. Designed a collection of printed t-shirts that tell a story, connect with a target audience, and move from shelf to cart.</p>
                 </div>
             </div>
             
             <!-- Portfolio Item 3 -->
-            <div class="portfolio-item" data-category="branding">
+            <div class="portfolio-item hover-y10 animation-appear-left" data-category="branding" style=" .animation-appear-left{scale: 0.6;}">
                 <div class="portfolio-img">
-                    <div style="width:100%; height:100%; background:linear-gradient(45deg, #f0f0f0, #e0e0e0); display:flex; align-items:center; justify-content:center;">
+                    <div style="width:100%; height:100%; background-color: #ccccccc5; display:flex; align-items:center; justify-content:center;">
                         <span style="color:#888; font-size:1.5rem;"><div class="img">
                           <img src="./images/portfolio/graphics-design-royal-business-card.webp" loading="lazy" alt="Modern futuristic business card">
                         </div></span>
@@ -386,9 +397,9 @@
             </div>
             
             <!-- Portfolio Item 4 -->
-            <div class="portfolio-item" data-category="consulting">
+            <div class="portfolio-item hover-y10 animation-appear-right" data-category="consulting" style=" .animation-appear-right{scale: 0.6;}">
                 <div class="portfolio-img">
-                    <div style="width:100%; height:100%; background:linear-gradient(45deg, #f0f0f0, #e0e0e0); display:flex; align-items:center; justify-content:center;">
+                    <div style="width:100%; height:100%; background-color: #ccccccc5; display:flex; align-items:center; justify-content:center;">
                         <span style="color:#888; font-size:1.5rem;"><div class="img">
                           <img src="./images/portfolio/graphics-design-packaging.webp" loading="lazy" alt="Modern drink mixing products packaging">
                         </div></span>
@@ -405,11 +416,11 @@
             </div>
             
             <!-- Portfolio Item 5 -->
-            <div class="portfolio-item" data-category="web">
+            <div class="portfolio-item hover-y10 animation-appear-right" data-category="web" style=" .animation-appear-right{scale: 0.6;}">
                 <div class="portfolio-img">
-                    <div style="width:100%; height:100%; background:linear-gradient(45deg, #f0f0f0, #e0e0e0); display:flex; align-items:center; justify-content:center;">
+                    <div style="width:100%; height:100%; background-color: #ccccccc5; display:flex; align-items:center; justify-content:center;">
                         <span style="color:#888; font-size:1.5rem;"><div class="img">
-                          <img src="./images/portfolio/" loading="lazy" alt="Website redesigned and increased sales of a home decoration service company">
+                          <img src="./images/portfolio/web-design-home-decor-redesign.webp" loading="lazy" alt="Website redesigned and increased sales of a home decoration service company">
                         </div></span>
                     </div>
                 </div>
@@ -424,11 +435,11 @@
             </div>
             
             <!-- Portfolio Item 6 -->
-            <div class="portfolio-item" data-category="ecommerce">
+            <div class="portfolio-item hover-y10 animation-appear-right" data-category="ecommerce" style=" .animation-appear-right{scale: 0.6;}">
                 <div class="portfolio-img">
-                    <div style="width:100%; height:100%; background:linear-gradient(45deg, #f0f0f0, #e0e0e0); display:flex; align-items:center; justify-content:center;">
+                    <div style="width:100%; height:100%; background-color: #ccccccc5; display:flex; align-items:center; justify-content:center;">
                         <span style="color:#888; font-size:1.5rem;"><div class="img">
-                          <img src="./images/portfolio/" loading="lazy" alt="Luxury high-end fashion e-commerce brand website for robust online presence">
+                          <img src="./images/portfolio/web-design-fashion-e-commerce.webp" loading="lazy" alt="Luxury high-end fashion e-commerce brand website for robust online presence">
                         </div></span>
                     </div>
                 </div>
@@ -442,12 +453,6 @@
                 </div>
             </div>
         </div>
-        <div class="graphic-elements">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
-      </div>
     </div>
 </section>
 <!-- portfolio -->
@@ -456,13 +461,13 @@
   <div class="container">
     <h4 class="sec-headings text-target">Client Ascents</h4>
     <div class="testimonials">
-      <div class="testimonials-item">
+      <div class="testimonials-item animation-appear-left" style="animation-range: entry 0% cover 30%;">
         <div class="testimonials-content box-shadow-white">
           <p class="testimonials-text">The branding work Ascender Solutions did for our startup 
             was phenomenal. They captured our vision perfectly and created a visual identity 
             that resonates with our target audience. The entire process was collaborative, 
             creative, and delivered exceptional value.</p>
-            <div class="testimonials-client box-shadow-white magnet">
+            <div class="testimonials-client magnet">
               <div class="testimonials-avatar">
                 <i class="fas fa-user-tie"></i>
               </div>
@@ -476,13 +481,13 @@
           <span><i class="fa-solid fa-circle"></i></span>
         </div>
       </div>
-      <div class="testimonials-item">
+      <div class="testimonials-item animation-appear-right" style="animation-range: entry 0% cover 30%;">
         <div class="testimonials-content box-shadow-white">
           <p class="testimonials-text">The branding work Ascender Solutions did for our startup 
             was phenomenal. They captured our vision perfectly and created a visual identity 
             that resonates with our target audience. The entire process was collaborative, 
             creative, and delivered exceptional value.</p>
-            <div class="testimonials-client box-shadow-white magnet">
+            <div class="testimonials-client magnet">
               <div class="testimonials-avatar">
                 <i class="fas fa-user-tie"></i>
               </div>
@@ -496,13 +501,13 @@
           <span><i class="fa-solid fa-circle"></i></span>
         </div>
       </div>
-      <div class="testimonials-item">
+      <div class="testimonials-item animation-appear-left" style="animation-range: entry 0% cover 30%;">
         <div class="testimonials-content box-shadow-white">
           <p class="testimonials-text">The branding work Ascender Solutions did for our startup 
             was phenomenal. They captured our vision perfectly and created a visual identity 
             that resonates with our target audience. The entire process was collaborative, 
             creative, and delivered exceptional value.</p>
-            <div class="testimonials-client box-shadow-white magnet">
+            <div class="testimonials-client magnet">
               <div class="testimonials-avatar">
                 <i class="fas fa-user-tie"></i>
               </div>
@@ -518,27 +523,24 @@
       </div>
     </div>
     <div class="graphic-elements">
-      <div class="circle circle-1 graphic-circle-white"></div>
-      <div class="circle circle-2 graphic-circle-white"></div>
-      <div class="circle circle-3 graphic-circle-white"></div>
-      <div class="circle circle-4 graphic-circle-white"></div>
-      <div class="line line-1 graphic-line-white"></div>
-      <div class="line line-2 graphic-line-white"></div>
-      <div class="line line-3 graphic-line-white"></div>
-      <div class="line line-4 graphic-line-white"></div>
+      <div class="circle circle-1 graphic-circle-white" style="opacity: .5;"></div>
+      <div class="circle circle-2 graphic-circle-white" style="opacity: .5;"></div>
+      <div class="circle circle-3 graphic-circle-white" style="opacity: .5;"></div>
+      <div class="circle circle-4 graphic-circle-white" style="opacity: .5;"></div>
   </div>
   </div>
 </section>
 <!-- testimonials -->
+<footer>
   <!-- contact -->
-   <section id="contact">
+  <section id="contact">
     <div class="container">
       <div class="row">
         <h4 class="sec-headings text-target">Begin Your Ascent</h4>
         <div class="col-lg-12">
           <div class="social-section">
             <h4 class="social-title">With Ascenders</h4>
-            <div class="social-links">
+            <div class="social-links animation-appear-top" style="animation-range: entry 0% cover 30%;">
               <a href="https://wa.me/+8801930184038" target="_blank" class="social-link magnet">
                   <div class="social-icon">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -572,12 +574,6 @@
             </div>
         </div>
         </div>
-        <div class="graphic-elements">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
-      </div>
       </div>
     </div>
    </section>
@@ -587,20 +583,21 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
-          <div class="footer-contents">
+          <div class="footer-contents animation-appear-bottom">
             <div class="img magnet">
               <img src="./images/logo-ascender-solutions-digital-services-agency_w.webp" loading="lazy" alt="logo of digital services agency Ascender Solutions specialized in personalized service and business problems solutions">
             </div>
-            <p>We specialize in creating personalized digital solutions that help businesses 
-              reach new heights through innovation and strategic thinking.</p>
+            <p style="margin-bottom: 0;">We specialize in creating personalized digital solutions that help businesses 
+              reach new heights.</p>
             <p>Transforming ideas into exceptional digital experiences.</p>
           </div>
         </div>
         <div class="col-lg-3 width50">
-          <div class="footer-contents">
+          <div class="footer-contents animation-appear-bottom">
             <h4 class="text-target">Services -</h4>
             <div class="navs">
               <ul>
+                <li><a href="./services.html">Digital Services Consultation</a></li>
                 <li><a href="./services.html">Graphics Design</a></li>
                 <li><a href="./services.html">Web Development</a></li>
                 <li><a href="./services.html">SEO</a></li>
@@ -611,7 +608,7 @@
           </div>
         </div>
         <div class="col-lg-3 width50">
-          <div class="footer-contents">
+          <div class="footer-contents animation-appear-bottom">
             <h4 class="text-target">Quick links -</h4>
             <div class="navs">
               <ul>
@@ -625,8 +622,8 @@
           </div>
         </div>
         <div class="col-lg-3 grid-it-center">
-          <div class="footer-contents">
-            <h4 class="text-target">Contact</h4>
+          <div class="footer-contents animation-appear-bottom">
+            <h4 class="text-target">Contact -</h4>
             <div class="social">
               <ul>
                 <li><span><i class="fa-solid fa-location-dot"></i></span><a href="#">Luxmibazar, Dhaka, Bangladesh</a></li>
@@ -645,6 +642,12 @@
             </div>
           </div>
         </div>
+        <div class="branding animation-appear-top" style="animation-range: entry 0% cover 10%;">
+          <a class="magnet" href="./contact.html" target="_blank">
+            <h4>Let's Ascend Together</h4>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
         <!-- Copyright -->
         <div class="copyright">
           <p>&copy; <span id="currentYear"></span> Ascender Solutions. All Rights Reserved.</p>
@@ -658,10 +661,6 @@
           <div class="circle circle-2"></div>
           <div class="circle circle-3"></div>
           <div class="circle circle-4"></div>
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
         </div>
       </div>
     </div>
@@ -672,9 +671,10 @@
     <i class="fab fa-whatsapp"></i>
   </a>
   <!-- WhatsApp Button -->
+</footer>
 
   <!-- Bootstrap js cdn -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js defer" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <!-- typewritter -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
   <!-- gsap -->

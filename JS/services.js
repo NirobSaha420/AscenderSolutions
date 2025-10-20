@@ -6,3 +6,7 @@ var typed = new Typed('.auto-type-sub-services-heading', {
     loop: true,
 });
 // typewritter effect
+Shery.textAnimate(".text-target", {
+  style: 1,
+  delay: 0,
+});

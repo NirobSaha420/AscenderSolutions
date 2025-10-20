@@ -17,8 +17,11 @@
 #services .left{
     width: 70%;
 }
+#services .row{
+    justify-content: center;
+}
 #services .service-contents{
-    width: 100%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -45,6 +48,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        position: relative;
         & > span{
             font-size: 4vw;
         }

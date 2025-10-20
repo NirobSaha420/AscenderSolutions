@@ -30,18 +30,14 @@
     <link rel="stylesheet" href="./CSS/contact.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="./CSS/responsive.css" media="print" onload="this.media='all'">
     <style>
-      #banner{
-        background: linear-gradient(135deg, #000 0%, #111 50%, #000 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        text-align: center;
-        overflow: hidden;
-        position: relative;
-        & > .container{
-          max-width: 100vw;
-        }
+      #preloader{
+        width: 100vw;
+        height: 100vh;
+        background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
+        filter: grayscale(100%);
+        background-size: 50%;
+        position: fixed;
+        z-index: 9999;
       }
     </style>
 </head>
@@ -59,7 +55,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link magnet active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link magnet" aria-current="page" href="./index.html">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link magnet" href="./services.html">Services</a>
@@ -71,155 +67,154 @@
                         <a class="nav-link magnet" href="./about.html">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link magnet" href="./contact.html">Contact</a>
+                        <a class="nav-link magnet active" href="./contact.html">Contact</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </nav>
             <!-- navbar -->
-    <!-- contact -->
-    <section id="contact">
-        <div class="container">
-          <div class="row">
-            <h4 class="sec-headings text-target">Begin Your Ascent</h4>
-            <div class="col-lg-12">
-              <div class="social-section">
-                <h4 class="social-title">With Ascenders</h4>
-                <div class="social-links">
-                  <a href="https://wa.me/+8801930184038" target="_blank" class="social-link magnet">
-                      <div class="social-icon">
-                        <i class="fa-brands fa-whatsapp"></i>
-                      </div>
-                      <span class="social-name">WhatsApp</span>
-                  </a>
-                  <a href="https://www.facebook.com/ascendersolution" target="_blank" class="social-link magnet">
-                      <div class="social-icon">
-                          <i class="fab fa-facebook-f"></i>
-                      </div>
-                      <span class="social-name">Facebook</span>
-                  </a>
-                    <a href="https://x.com/Ascender_S" target="_blank" class="social-link magnet">
-                        <div class="social-icon">
-                          <i class="fa-brands fa-x-twitter"></i>
-                        </div>
-                        <span class="social-name">X-Twitter</span>
-                    </a>
-                    <a href="https://www.youtube.com/@ascender_solutions" target="_blank" class="social-link magnet">
-                        <div class="social-icon">
-                          <i class="fa-brands fa-youtube"></i>
-                        </div>
-                        <span class="social-name">YouTube</span>
-                    </a>  
-                    <a href="https://www.instagram.com/ascendersolutions/" target="_blank" class="social-link magnet">
-                      <div class="social-icon">
-                          <i class="fab fa-instagram"></i>
-                      </div>
-                      <span class="social-name">Instagram</span>
-                  </a>
-                </div>
-            </div>
-            </div>
-            <div class="graphic-elements">
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-              <div class="line line-4"></div>
-          </div>
-          </div>
-        </div>
-       </section>
-      <!-- contact -->
-      <!-- footer -->
-      <section id="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="footer-contents">
-                <div class="img magnet">
-                  <img src="./images/logo-ascender-solutions-digital-services-agency_w.webp" loading="lazy" alt="logo of digital services agency Ascender Solutions specialized in personalized service and business problems solutions">
-                </div>
-                <p>We specialize in creating personalized digital solutions that help businesses 
-                  reach new heights through innovation and strategic thinking.</p>
-                <p>Transforming ideas into exceptional digital experiences.</p>
-              </div>
-            </div>
-            <div class="col-lg-3 width50">
-              <div class="footer-contents">
-                <h4 class="text-target">Services -</h4>
-                <div class="navs">
-                  <ul>
-                    <li><a href="./services.html">Graphics Design</a></li>
-                    <li><a href="./services.html">Web Development</a></li>
-                    <li><a href="./services.html">SEO</a></li>
-                    <li><a href="./services.html">Digital Marketing</a></li>
-                    <li><a href="./services.html">Social Media Ads Management</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 width50">
-              <div class="footer-contents">
-                <h4 class="text-target">Quick links -</h4>
-                <div class="navs">
-                  <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./team.html">Team</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 grid-it-center">
-              <div class="footer-contents">
-                <h4 class="text-target">Contact</h4>
-                <div class="social">
-                  <ul>
-                    <li><span><i class="fa-solid fa-location-dot"></i></span><a href="#">Luxmibazar, Dhaka, Bangladesh</a></li>
-                    <li><span><i class="fa-solid fa-phone"></i></span><a href="#">Phone: +880 1930184038</a></li>
-                    <li><span><i class="fa-solid fa-envelope"></i></span><a href="#">Email: info.ascendersolutions@gmail.com</a></li>
-                  </ul>
-                  <div class="follow-us">
-                    <h4>Follow Us</h4>
-                    <ul>
-                      <li><a href="https://www.facebook.com/ascendersolution" target="_blank" class="magnet"><span><i class="fab fa-facebook-f"></i></span></a></li>
-                      <li><a href="https://x.com/Ascender_S" target="_blank" class="magnet"><span><i class="fa-brands fa-x-twitter"></i></span></a></li>
-                      <li><a href="https://www.youtube.com/@ascender_solutions" target="_blank" class="magnet"><span><i class="fa-brands fa-youtube"></i></span></a></li>
-                      <li><a href="https://www.instagram.com/ascendersolutions/" target="_blank" class="magnet"><span><i class="fab fa-instagram"></i></span></a></li>
-                    </ul>
+<footer>
+  <!-- contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <h4 class="sec-headings text-target">Begin Your Ascent</h4>
+        <div class="col-lg-12">
+          <div class="social-section">
+            <h4 class="social-title">With Ascenders</h4>
+            <div class="social-links animation-appear-top" style="animation-range: entry 0% cover 30%;">
+              <a href="https://wa.me/+8801930184038" target="_blank" class="social-link magnet">
+                  <div class="social-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
                   </div>
-                </div>
-              </div>
+                  <span class="social-name">WhatsApp</span>
+              </a>
+              <a href="https://www.facebook.com/ascendersolution" target="_blank" class="social-link magnet">
+                  <div class="social-icon">
+                      <i class="fab fa-facebook-f"></i>
+                  </div>
+                  <span class="social-name">Facebook</span>
+              </a>
+                <a href="https://x.com/Ascender_S" target="_blank" class="social-link magnet">
+                    <div class="social-icon">
+                      <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                    <span class="social-name">X-Twitter</span>
+                </a>
+                <a href="https://www.youtube.com/@ascender_solutions" target="_blank" class="social-link magnet">
+                    <div class="social-icon">
+                      <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <span class="social-name">YouTube</span>
+                </a>  
+                <a href="https://www.instagram.com/ascendersolutions/" target="_blank" class="social-link magnet">
+                  <div class="social-icon">
+                      <i class="fab fa-instagram"></i>
+                  </div>
+                  <span class="social-name">Instagram</span>
+              </a>
             </div>
-            <!-- Copyright -->
-            <div class="copyright">
-              <p>&copy; <span id="currentYear"></span> Ascender Solutions. All Rights Reserved.</p>
-              <div class="copyright-links">
-                  <a href="./faq.html" target="_blank" class="magnet">FAQ</a>
-              </div>
+        </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- contact -->
+  <!-- footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-contents animation-appear-bottom">
+            <div class="img magnet">
+              <img src="./images/logo-ascender-solutions-digital-services-agency_w.webp" loading="lazy" alt="logo of digital services agency Ascender Solutions specialized in personalized service and business problems solutions">
             </div>
-            </div>
-            <div class="graphic-elements">
-              <div class="circle circle-1"></div>
-              <div class="circle circle-2"></div>
-              <div class="circle circle-3"></div>
-              <div class="circle circle-4"></div>
-              <div class="line line-1"></div>
-              <div class="line line-2"></div>
-              <div class="line line-3"></div>
-              <div class="line line-4"></div>
+            <p style="margin-bottom: 0;">We specialize in creating personalized digital solutions that help businesses 
+              reach new heights.</p>
+            <p>Transforming ideas into exceptional digital experiences.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 width50">
+          <div class="footer-contents animation-appear-bottom">
+            <h4 class="text-target">Services -</h4>
+            <div class="navs">
+              <ul>
+                <li><a href="./services.html">Digital Services Consultation</a></li>
+                <li><a href="./services.html">Graphics Design</a></li>
+                <li><a href="./services.html">Web Development</a></li>
+                <li><a href="./services.html">SEO</a></li>
+                <li><a href="./services.html">Digital Marketing</a></li>
+                <li><a href="./services.html">Social Media Ads Management</a></li>
+              </ul>
             </div>
           </div>
         </div>
-       </section>
-      <!-- footer -->
-      <!-- WhatsApp Button -->
-      <a href="https://wa.me/+8801930184038" class="whatsapp-button" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-      <!-- WhatsApp Button -->
+        <div class="col-lg-3 width50">
+          <div class="footer-contents animation-appear-bottom">
+            <h4 class="text-target">Quick links -</h4>
+            <div class="navs">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 grid-it-center">
+          <div class="footer-contents animation-appear-bottom">
+            <h4 class="text-target">Contact -</h4>
+            <div class="social">
+              <ul>
+                <li><span><i class="fa-solid fa-location-dot"></i></span><a href="#">Luxmibazar, Dhaka, Bangladesh</a></li>
+                <li><span><i class="fa-solid fa-phone"></i></span><a href="#">Phone: +880 1930184038</a></li>
+                <li><span><i class="fa-solid fa-envelope"></i></span><a href="#">Email: info.ascendersolutions@gmail.com</a></li>
+              </ul>
+              <div class="follow-us">
+                <h4>Follow Us</h4>
+                <ul>
+                  <li><a href="https://www.facebook.com/ascendersolution" target="_blank" class="magnet"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                  <li><a href="https://x.com/Ascender_S" target="_blank" class="magnet"><span><i class="fa-brands fa-x-twitter"></i></span></a></li>
+                  <li><a href="https://www.youtube.com/@ascender_solutions" target="_blank" class="magnet"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+                  <li><a href="https://www.instagram.com/ascendersolutions/" target="_blank" class="magnet"><span><i class="fab fa-instagram"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding animation-appear-top" style="animation-range: entry 0% cover 10%;">
+          <a class="magnet" href="./contact.html" target="_blank">
+            <h4>Let's Ascend Together</h4>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>&copy; <span id="currentYear"></span> Ascender Solutions. All Rights Reserved.</p>
+          <div class="copyright-links">
+              <a href="./faq.html" target="_blank" class="magnet">FAQ</a>
+          </div>
+        </div>
+        </div>
+        <div class="graphic-elements">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-4"></div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- footer -->
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+8801930184038" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- WhatsApp Button -->
+</footer>
     
       <!-- Bootstrap js cdn -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js defer" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>

@@ -30,8 +30,17 @@
     <link rel="stylesheet" href="./CSS/services.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="./CSS/responsive.css" media="print" onload="this.media='all'">
     <style>
+      #preloader{
+        width: 100vw;
+        height: 100vh;
+        background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
+        filter: grayscale(100%);
+        background-size: 50%;
+        position: fixed;
+        z-index: 9999;
+      }
       #banner{
-        background: linear-gradient(135deg, #000 0%, #111 50%, #000 100%);
+        background: linear-gradient(135deg, #222 0%, #111 50%, #222 100%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -59,10 +68,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link magnet active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link magnet" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link magnet" href="./services.html">Services</a>
+                <a class="nav-link magnet active" href="./services.html">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link magnet" href="./team.html">Team</a>
@@ -78,8 +87,8 @@
         </div>
       </nav>
     <!-- navbar -->
-       <!-- banner -->
-   <section id="banner">
+    <!-- banner -->
+    <section id="banner">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -101,10 +110,6 @@
                     <div class="circle circle-2"></div>
                     <div class="circle circle-3"></div>
                     <div class="circle circle-4"></div>
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-                    <div class="line line-4"></div>
                 </div>
             </div>
         </div>
@@ -115,8 +120,9 @@
  <section id="services">
   <div class="container">
     <div class="row">
-      <h4 class="sec-headings text-target">Yo Yo</h4>
-      <div class="service-contents box-shadow-white">
+      <h4 class="sec-headings text-target">Changing the Standard</h4>
+      <p class="text-center" style="font-size: 1.4vw; margin-bottom: 2vw;">Where Your Vision Meets Our Execution.</p>
+      <div class="service-contents box-shadow-white hover-y10 animation-appear-left">
         <div class="left">
           <div class="sl-contents">
             <div class="headers">
@@ -144,7 +150,7 @@
           </div>
         </div>
       </div>
-      <div class="service-contents even box-shadow-white">
+      <div class="service-contents even box-shadow-white hover-y10 animation-appear-right">
         <div class="left">
           <div class="sl-contents">
             <div class="headers">
@@ -172,7 +178,7 @@
           </div>
         </div>
       </div>
-      <div class="service-contents box-shadow-white">
+      <div class="service-contents box-shadow-white hover-y10 animation-appear-left">
         <div class="left">
           <div class="sl-contents">
             <div class="headers">
@@ -200,7 +206,7 @@
           </div>
         </div>
       </div>
-      <div class="service-contents even box-shadow-white">
+      <div class="service-contents even box-shadow-white hover-y10 animation-appear-right">
         <div class="left">
           <div class="sl-contents">
             <div class="headers">
@@ -228,7 +234,7 @@
           </div>
         </div>
       </div>
-      <div class="service-contents box-shadow-white">
+      <div class="service-contents box-shadow-white hover-y10 animation-appear-left">
         <div class="left">
           <div class="sl-contents">
             <div class="headers">
@@ -256,7 +262,7 @@
           </div>
         </div>
       </div>
-      <div class="service-contents even box-shadow-white">
+      <div class="service-contents even box-shadow-white hover-y10 animation-appear-right">
         <div class="left">
           <div class="sl-contents">
             <div class="headers">
@@ -289,23 +295,20 @@
         <div class="circle circle-2 graphic-circle-white"></div>
         <div class="circle circle-3 graphic-circle-white"></div>
         <div class="circle circle-4 graphic-circle-white"></div>
-        <div class="line line-1 graphic-line-white"></div>
-        <div class="line line-2 graphic-line-white"></div>
-        <div class="line line-3 graphic-line-white"></div>
-        <div class="line line-4 graphic-line-white"></div>
     </div>
     </div>
   </div>
  </section>
+ <footer>
   <!-- contact -->
-   <section id="contact">
+  <section id="contact">
     <div class="container">
       <div class="row">
         <h4 class="sec-headings text-target">Begin Your Ascent</h4>
         <div class="col-lg-12">
           <div class="social-section">
             <h4 class="social-title">With Ascenders</h4>
-            <div class="social-links">
+            <div class="social-links animation-appear-top" style="animation-range: entry 0% cover 30%;">
               <a href="https://wa.me/+8801930184038" target="_blank" class="social-link magnet">
                   <div class="social-icon">
                     <i class="fa-brands fa-whatsapp"></i>
@@ -339,12 +342,6 @@
             </div>
         </div>
         </div>
-        <div class="graphic-elements">
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
-      </div>
       </div>
     </div>
    </section>
@@ -354,20 +351,21 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3">
-          <div class="footer-contents">
+          <div class="footer-contents animation-appear-bottom">
             <div class="img magnet">
               <img src="./images/logo-ascender-solutions-digital-services-agency_w.webp" loading="lazy" alt="logo of digital services agency Ascender Solutions specialized in personalized service and business problems solutions">
             </div>
-            <p>We specialize in creating personalized digital solutions that help businesses 
-              reach new heights through innovation and strategic thinking.</p>
+            <p style="margin-bottom: 0;">We specialize in creating personalized digital solutions that help businesses 
+              reach new heights.</p>
             <p>Transforming ideas into exceptional digital experiences.</p>
           </div>
         </div>
         <div class="col-lg-3 width50">
-          <div class="footer-contents">
+          <div class="footer-contents animation-appear-bottom">
             <h4 class="text-target">Services -</h4>
             <div class="navs">
               <ul>
+                <li><a href="./services.html">Digital Services Consultation</a></li>
                 <li><a href="./services.html">Graphics Design</a></li>
                 <li><a href="./services.html">Web Development</a></li>
                 <li><a href="./services.html">SEO</a></li>
@@ -378,7 +376,7 @@
           </div>
         </div>
         <div class="col-lg-3 width50">
-          <div class="footer-contents">
+          <div class="footer-contents animation-appear-bottom">
             <h4 class="text-target">Quick links -</h4>
             <div class="navs">
               <ul>
@@ -392,8 +390,8 @@
           </div>
         </div>
         <div class="col-lg-3 grid-it-center">
-          <div class="footer-contents">
-            <h4 class="text-target">Contact</h4>
+          <div class="footer-contents animation-appear-bottom">
+            <h4 class="text-target">Contact -</h4>
             <div class="social">
               <ul>
                 <li><span><i class="fa-solid fa-location-dot"></i></span><a href="#">Luxmibazar, Dhaka, Bangladesh</a></li>
@@ -412,6 +410,12 @@
             </div>
           </div>
         </div>
+        <div class="branding animation-appear-top" style="animation-range: entry 0% cover 10%;">
+          <a class="magnet" href="./contact.html" target="_blank">
+            <h4>Let's Ascend Together</h4>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
         <!-- Copyright -->
         <div class="copyright">
           <p>&copy; <span id="currentYear"></span> Ascender Solutions. All Rights Reserved.</p>
@@ -425,10 +429,6 @@
           <div class="circle circle-2"></div>
           <div class="circle circle-3"></div>
           <div class="circle circle-4"></div>
-          <div class="line line-1"></div>
-          <div class="line line-2"></div>
-          <div class="line line-3"></div>
-          <div class="line line-4"></div>
         </div>
       </div>
     </div>
@@ -439,6 +439,7 @@
     <i class="fab fa-whatsapp"></i>
   </a>
   <!-- WhatsApp Button -->
+</footer>
 
   <!-- Bootstrap js cdn -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js defer" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
