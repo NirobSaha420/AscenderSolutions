@@ -74,7 +74,7 @@
     }
     .navbar .navbar-brand{
         & > h1{
-            font-size: 2.5vw;
+            font-size: 3vw;
         }
     }
     .navbar-toggler-icon{
@@ -83,7 +83,7 @@
         height: 6vw;
     }
     .navbar-toggler{
-        padding: 0 .2vw;
+        padding: .5vw .7vw;
         &:focus{
             box-shadow: 0 0 0 0.12rem;
         }
@@ -99,7 +99,7 @@
             margin-bottom: .5vw;
         }
         & > .nav-link{
-            padding: 1.5vw 0;
+            padding: 2.5vw 0;
         }
     }
     .navbar .dropdown-item{
@@ -107,17 +107,16 @@
     }
     /* navbar */
     /* banner */
-    #banner .banner-contents .sub-container .text-auto-effect .main-heading-text{
-        -webkit-text-stroke: .25px var(--Clor-darkWhite);
+    #banner{
+        min-height: 50vh !important;
     }
-    #banner .banner-contents .sub-container .auto-text-blank-span{
-        -webkit-text-stroke: .25px var(--Clor-darkWhite);
-    }
-    #banner .typed-cursor{
+    #banner .banner-contents .sub-container .text-auto-effect .main-heading-text,
+    #banner .banner-contents .sub-container .auto-text-blank-span,
+    #banner .typed-cursor,
+    #banner .banner-contents .para span{
         -webkit-text-stroke: .25px var(--Clor-darkWhite);
     }
     #banner .banner-contents .para span{
-        -webkit-text-stroke: .25px var(--Clor-darkWhite);
         font-size: 1.6vw;
     }
     /* banner */
@@ -127,6 +126,12 @@
     }
     #services .service-contents{
         border-top: 2px solid var(--Clor-lightBlack);
+        & > h4{
+            font-size: 3vw;
+        }
+        & > p{
+            font-size: 1.8vw;
+        }
     }
     /* services */
     /* about */
@@ -152,9 +157,15 @@
     /* achivements */
     #achivements .row .achivements-contents .counter-parent .counter-child p{
         margin-bottom: 1vw;
+        font-size: 2.4vw;
     }
     #achivements .achivements-contents{
         margin-bottom: 1.5vw;
+        padding: 3vw;
+    }
+    #achivements .row .achivements-contents .counter-parent .counter-child .texts h4,
+    #achivements .row .achivements-contents .counter-parent .counter-child .texts h4{
+        font-size: 3.8vw;
     }
     /* achivements */
     /* difference */
@@ -169,7 +180,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 3vw;
+            gap: 5vw;
         }
     }
     #difference .diff-containers .diff-main{
@@ -216,7 +227,7 @@
     #portfolio .portfolio-grid{
         grid-template-columns: 1fr;
         justify-items: center;
-        gap: 5vw;
+        gap: 10vw;
         & > .portfolio-item{
             width: 85%;
             height: fit-content;
@@ -226,7 +237,7 @@
         font-size: 2.2vw;
     }
     #portfolio .portfolio-tag{
-        font-size: 1.6vw;
+        font-size: 1.4vw;
         padding: 1vw;
     }
     #portfolio .portfolio-content{
@@ -240,13 +251,14 @@
     /* portfolio */
     /* testimonials */
     #testimonials .testimonials{
-        max-width: 80%;
+        max-width: 90%;
     }
     #testimonials .testimonials .testimonials-item{
+        margin-bottom: 10vw;
         & > .testimonials-content{
             border-left: 2px solid var(--Clor-lightBlack);
             & > p{
-                font-size: 2vw;
+                font-size: 2.2vw;
             }
             & > .testimonials-client > .testimonials-avatar{
                 font-size: 2.4vw;
@@ -256,10 +268,11 @@
             }
             & > .testimonials-client > .testimonials-details{
                 & > h4{
-                    font-size: 2.4vw;
+                    font-size: 2.5vw;
+                    margin-bottom: .25rem;
                 }
                 & > p{
-                    font-size: 2.1vw;
+                    font-size: 2.3vw;
                 }
             }
         }
@@ -281,12 +294,24 @@
     }
     /* testimonials */
     /* contact */
-    #contact .social-section h4{
-    font-size: 3vw;
-    letter-spacing: 1px;
+    #contact .social-section{
+        margin-bottom: 0;
+        & > h4{
+            font-size: 2.8vw;
+            letter-spacing: 1px;
+            margin-bottom: 4vw;
+        }
     }
     #contact .social-section .social-links .social-link{
         transform: translate(0) !important;
+        width: 18%;
+        padding: 2vw;
+        & > .social-icon{
+            font-size: 2.5vw;
+        }
+        & > span{
+            font-size: 2.4vw;
+        }
     }
     /* contact */
     /* footer */
@@ -301,13 +326,17 @@
         & > .img{
             display: flex;
             justify-content: center;
+            margin: 2vw 0;
         }
         & > .img > img{
             width: 25%;
         }
     }
-    #footer .footer-contents ul li{
-        font-size: 2.5vw;
+    #footer .footer-contents ul{
+        padding-left: 1rem;
+        & > li{
+            font-size: 2.5vw;
+        }
     }
     #footer .width50{
         width: 50%;
@@ -320,11 +349,9 @@
     #footer .footer-contents .social{
         display: flex;
         justify-content: center;
-        & > ul{
-            padding-left: 2rem;
-        }
         & > .follow-us{
             margin-left: 8vw;
+            padding: 0;
             & > h4{
                 font-size: 3vw;
                 text-align: center;

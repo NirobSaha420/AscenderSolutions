@@ -12,10 +12,10 @@
     padding-bottom: 4vw;
 }
 #services .right{
-    width: 30%;
+    width: 25%;
 }
 #services .left{
-    width: 70%;
+    width: 75%;
 }
 #services .row{
     justify-content: center;
@@ -49,8 +49,9 @@
         align-items: center;
         border-radius: 10px;
         position: relative;
-        & > span{
-            font-size: 4vw;
+        & > .icon{
+            font-size: 3vw;
+            padding: 2.5vw;
         }
     }
 }
@@ -79,10 +80,10 @@
 #services .left ul{
     list-style-type: none;
     padding: 0;
-    & > li{
+    display: flex;
+    justify-content: space-between;
+    & > .col-lg-6 > li{
         margin: 1vw 0;
-        display: flex;
-        align-items: center;
         font-size: 1.4vw;
         & > span{
             font-size: 1.4vw;
