@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="./CSS/services.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="./CSS/responsive.css" media="print" onload="this.media='all'">
     <style>
+      *{
+        font-display: swap;
+      }
       #preloader{
         width: 100vw;
         height: 100vh;
@@ -38,19 +41,6 @@
         background-size: 50%;
         position: fixed;
         z-index: 9999;
-      }
-      #banner{
-        background: linear-gradient(135deg, #222 0%, #111 50%, #222 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        text-align: center;
-        overflow: hidden;
-        position: relative;
-        & > .container{
-          max-width: 100vw;
-        }
       }
     </style>
 </head>
@@ -141,8 +131,6 @@
                   <li><span><i class="fa-solid fa-circle-check"></i></span>Product Model Design</li>
                 </div>
                 <div class="col-lg-6">
-                  <li><span><i class="fa-solid fa-circle-check"></i></span>SEO Rank</li>
-                  <li><span><i class="fa-solid fa-circle-check"></i></span>Payment Integration</li>
                   <li><span><i class="fa-solid fa-circle-check"></i></span>PSD Design</li>
                 </div>
               </ul>

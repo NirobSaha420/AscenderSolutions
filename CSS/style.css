@@ -75,6 +75,7 @@ a{
     width: 50%;
 }
 .more{
+    margin: 1vw 0;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -148,7 +149,7 @@ a{
 .circle {
     position: absolute;
     border-radius: 50%;
-    background: #ffffff10;
+    background: #ffffff15;
 }
 .circle-1 {
     width: 15vw;
@@ -346,7 +347,7 @@ a{
 /* navbar */
 /* banner */
 #banner{
-    background: linear-gradient(135deg, #252525 0%, #151515 50%, #252525 100%);
+    background: linear-gradient(135deg, #000000 0%, #222 50%, #000000 100%);
     display: flex;
     justify-content: center;
     align-items: center;

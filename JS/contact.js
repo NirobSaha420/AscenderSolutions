@@ -1,8 +1,8 @@
 // typewritter effect
-var typed = new Typed('.auto-type-sub-contact-heading', {
-    strings: [' Different ', ' Novel ', ' Experts '],
-      typeSpeed: 100,
-      backSpeed: 100,
-      loop: true,
-  });
-  // typewritter effect
+var typed = new Typed('.auto-type-contact-main-heading', {
+  strings: [' Solution ', ' Experience ', ' Impact '],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+});
+// typewritter effect
