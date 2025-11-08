@@ -1,0 +1,154 @@
+*{
+    --Clor-black: #000;
+    --Clor-white: #fff;
+    --Clor-lightBlack: #444;
+    --Clor-darkWhite: #e5e5e5;
+}
+#banner{
+    min-height: 65vh;
+  }
+#banner .banner-contents .para span{
+    font-size: clamp(1.25rem, -0.179rem + 7.143vw, 11.25rem);
+}
+/* services */
+#services{
+    padding-bottom: 4vw;
+}
+#services .right{
+    width: 25%;
+}
+#services .left{
+    width: 75%;
+}
+#services .row{
+    justify-content: center;
+    & > .heading-p{
+        font-size: 1.4vw; 
+        margin-bottom: 2vw;
+    }
+}
+#services .service-contents{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    padding: 2vw;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 0 3vw 0;
+    z-index: 2;
+    transition: .3s ease;
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 10px inset;
+    }
+}
+#services .even{
+    flex-direction: row-reverse;
+}
+#services .right{
+    height: 100%;
+    z-index: 2;
+    & > .sr-contents{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: relative;
+        & > .icon{
+            font-size: 3vw;
+            padding: 2.5vw;
+        }
+    }
+}
+#services .diff-divider{
+    margin: 0 2%;
+    & > .divider-line{
+        height: 90%;
+    }
+}
+#services .left{
+    height: 100%;
+    z-index: 2;
+    & > .sl-contents{
+        height: 100%;
+        padding: 1vw;
+        & > .headers > h4{
+            font-size: 2vw;
+            font-weight: 700;
+        }
+        & > p{
+            font-size: 1.4vw;
+            margin: 1.5vw 0;
+        }
+    }
+}
+#services .left ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    & > .col-lg-6 > li{
+        margin: 2vw 0;
+        font-size: 1.4vw;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        & > span{
+            font-size: 1.4vw;
+            margin-right: .5vw;
+        }
+    }
+}
+/* services */
+/* responsiveness */
+@media (max-width: 430px){
+    #services .service-contents{
+        width: 100%;
+        padding: 3vw;
+    }
+    #services .right{
+        width: 20%;
+    }
+    #services .left{
+        width: 80%;
+    }
+    #services .row .heading-p{
+        font-size: 2.5vw;
+    }
+    #services .diff-divider{
+        width: 4%;
+        & > .divider-line{
+            width: 15%;
+        }
+    }
+    #services .testimonials-gap{
+        height: 1px;
+        & > span{
+            font-size: 3vw;
+        }
+    }
+    #services .service-contents{
+        margin-bottom: 8vw;
+    }
+    #services .service-contents .left .sl-contents{
+        & > .headers > h4{
+            font-size: 3.8vw;
+        }
+        & > p{
+            font-size: 2.4vw;
+            margin: 2.5vw 0;
+        }
+    }
+    #services .service-contents .left ul .col-lg-6 li{
+        margin: 3vw 0;
+        font-size: 2.4vw;
+        & > span{
+            font-size: 2.5vw;
+            margin-right: 1.5vw;
+        }
+    }
+}
+/* responsiveness */

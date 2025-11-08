@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Ascender Solutions</title>
+    <!-- PRELOADS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <!-- favicons -->
+    <link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicons/favicon.svg" />
+    <link rel="icon" type="image/png" href="./images/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Ascender Solutions"/>
+    <link rel="manifest" href="./images/favicons/site.webmanifest" />
+    <!-- Bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Shery css -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" media="print" onload="this.media='all'" />
+    <!-- Custom css links -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css" media="print" onload="this.media='all'">
+    <style>
+        *{
+        font-display: swap;
+        }
+        #preloader{
+        width: 100vw;
+        height: 100vh;
+        background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
+        filter: grayscale(100%);
+        background-size: 50%;
+        position: fixed;
+        z-index: 9999;
+        }
+        #banner{
+          min-height: 50vh;
+        }
+        #banner .banner-contents .para span{
+        font-size: clamp(1.25rem, -0.179rem + 7.143vw, 11.25rem);
+        }
+        /* faq section */
+        #faq{
+            margin: 0 0 7vw 0;
+        }
+        #faq .h1-container{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vw;
+        }
+        #faq .container{
+          max-width: 70vw;
+        }
+        .accordion-button{
+            font-size: 1.4vw;
+            font-weight: 700;
+            border-radius: 5px !important;
+        }
+        #faq h1{
+            width: 60%;
+            margin: 0 0 6vw 0;
+            font-size: 4vw;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+        #faq .accordion-button:not(.collapsed){
+          background-color: var(--Clor-lightBlack);
+          color: var(--Clor-darkWhite);
+        }
+        #faq .accordion-button:focus{
+            box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.15);
+        }
+        /* faq section */
+    </style>
+</head>
+<body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+    <!-- preloader -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <a class="navbar-brand magnet" href="./index.html"><h1>Ascender Solutions.</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-parent">
+            <li class="nav-item">
+                <a class="nav-link magnet active" aria-current="page" href="./index.html" style="color: #000; font-weight: 900; border-bottom: 3px solid #000;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link magnet" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link magnet" href="./team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link magnet" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link magnet" href="./contact.html">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <!-- banner -->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-contents">
+                      <div class="sub-container">
+                        <div class="text-auto-effect">
+                          <span class="main-heading-text magnet"> Your </span>
+                          <span class="auto-text-blank-span auto-type-faq-main-heading magnet"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="graphic-elements">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                        <div class="circle circle-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner -->
+    <!-- faq section -->
+    <section id="faq" class="faq-main">
+        <div class="h1-container">
+          <h1 class="animation-appear-top">Frequently asked questions</h1>
+          <div class="btnn animation-appear-top">
+            <a href="./contact.html" class="magnet" target="_blank">Contact</a>
+          </div>
+        </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  What is Aurora ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Why should you buy from us ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                What are the shipping prices ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                How is our return policy ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                What is our return policy ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                How much time would it take to deliver ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+       </section>
+      <!-- faq section -->
+<footer>
+  <!-- footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer-contents">
+            <div class="img magnet">
+              <img src="./images/logo-ascender-solutions-digital-services-agency_w.webp" loading="lazy" alt="logo of digital services agency Ascender Solutions specialized in personalized service and business problems solutions">
+            </div>
+            <p style="margin-bottom: 0;">We specialize in creating personalized digital solutions that help businesses 
+              reach new heights.</p>
+            <p>Transforming ideas into exceptional digital experiences.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 width50">
+          <div class="footer-contents">
+            <h4 class="text-target">Services -</h4>
+            <div class="navs">
+              <ul>
+                <li><a href="./services.html">Digital Services Consultation</a></li>
+                <li><a href="./services.html">Graphics Design</a></li>
+                <li><a href="./services.html">Web Development</a></li>
+                <li><a href="./services.html">SEO</a></li>
+                <li><a href="./services.html">Digital Marketing</a></li>
+                <li><a href="./services.html">Social Media Ads Management</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 width50">
+          <div class="footer-contents">
+            <h4 class="text-target">Quick links -</h4>
+            <div class="navs">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./team.html">Team</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 grid-it-center">
+          <div class="footer-contents">
+            <h4 class="text-target">Contact -</h4>
+            <div class="social">
+              <ul>
+                <li><span><i class="fa-solid fa-location-dot"></i></span><a href="#">Luxmibazar, Dhaka, Bangladesh</a></li>
+                <li><span><i class="fa-solid fa-phone"></i></span><a href="#">Phone: +880 1930184038</a></li>
+                <li><span><i class="fa-solid fa-envelope"></i></span><a href="#">Email: info.ascendersolutions@gmail.com</a></li>
+              </ul>
+              <div class="follow-us">
+                <h4>Follow Us</h4>
+                <ul>
+                  <li><a href="https://www.facebook.com/ascendersolution" target="_blank" class="magnet"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                  <li><a href="https://x.com/Ascender_S" target="_blank" class="magnet"><span><i class="fa-brands fa-x-twitter"></i></span></a></li>
+                  <li><a href="https://www.youtube.com/@ascender_solutions" target="_blank" class="magnet"><span><i class="fa-brands fa-youtube"></i></span></a></li>
+                  <li><a href="https://www.instagram.com/ascendersolutions/" target="_blank" class="magnet"><span><i class="fab fa-instagram"></i></span></a></li>
+                  <li><a href="https://www.instagram.com/ascendersolutions/" target="_blank" class="magnet" aria-label="Ascender Solutions Instagram"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="branding" style="animation-range: entry 0% cover 10%;">
+          <a class="magnet" href="./contact.html" target="_blank">
+            <h4>Let's Ascend Together</h4>
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+          <p>&copy; <span id="currentYear"></span> Ascender Solutions. All Rights Reserved.</p>
+          <div class="copyright-links">
+              <a href="./faq.html" target="_blank" class="magnet">FAQ</a>
+          </div>
+        </div>
+        </div>
+        <div class="graphic-elements">
+          <div class="circle circle-1"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-4"></div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- footer -->
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+8801930184038" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <!-- WhatsApp Button -->
+</footer>
+
+  <!-- Bootstrap js cdn -->
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- typewritter -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <!-- Scroll Trigger is needed for Scroll Effects -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+  <!-- Shery js -->
+  <script  type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js" defer></script>
+  <!-- Custom js links -->
+  <script src="./JS/custom.js" defer></script>
+  <script src="./JS/faq.js" defer></script>
+</body>
+</html>

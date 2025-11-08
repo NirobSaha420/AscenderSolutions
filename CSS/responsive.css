@@ -1,0 +1,435 @@
+/* small devices */
+@media (max-width: 430px) {
+    *{
+        --Clor-black: #000;
+        --Clor-white: #fff;
+        --Clor-lightBlack: #444;
+        --Clor-darkWhite: #e5e5e5;
+    }
+    /* mouse follower destroyer */
+    .mousefollower { 
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    .movercirc { 
+        display: none !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+    /* mouse follower destroyer */
+    /* magnet destroyer */
+    #banner{
+        min-height: 33vh !important;
+    }
+    #banner h1{
+        transform: translate(0) !important;
+    }
+    #services .icon{
+        transform: translate(0) !important;
+    }
+    /* magnet destroyer */
+    .right,
+    .left{
+        width: auto;
+    }
+    .circle-1 {
+        width: 15vw;
+        height: 15vw;
+        animation: float 8s ease-in-out infinite;
+    }
+    .circle-2 {
+        width: 12vw;
+        height: 12vw;
+        animation: float 6s ease-in-out infinite;
+    }
+    .circle-3 {
+        width: 8vw;
+        height: 8vw;
+        animation: float 6s ease-in-out infinite;
+    }
+    .circle-4 {
+        width: 7vw;
+        height: 7vw;
+        animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float {
+        0% {
+            transform: translateY(0) rotate(-4deg);
+        }
+        50% {
+            transform: translateY(-10px) rotate(8deg);
+        }
+        100% {
+            transform: translateY(0) rotate(-4deg);
+        }
+    }
+    .more{
+        margin: 2.5vw 0;
+        & > a{
+            letter-spacing: .125rem;
+            font-size: 2.5vw;
+            &::before{
+                height: 1px;
+            }
+        }
+    }
+    .box-shadow-white{
+        box-shadow: inset 0 0 5px 2.5px rgba(0, 0, 0, 0.144);
+    }
+    .box-shadow-black{
+        box-shadow: 0 4px 7.5px rgba(255, 255, 255, 0.1),
+        inset 0 0 5px 2.5px rgba(255, 255, 255, 0.2);
+    }
+    .hover-y10:hover{
+        transform: translateY(-5px);
+    }
+    .icon{
+        padding: 4vw;
+        font-size: 4.5vw;
+    }
+    /* navbar */
+    .navbar img{
+        width: 12vw;
+    }
+    .navbar .navbar-brand{
+        & > h1{
+            font-size: 3.2vw;
+        }
+    }
+    .navbar-toggler-icon{
+        background-size: 50%;
+        width: 8vw;
+        height: 7vw;
+    }
+    .navbar-toggler{
+        padding: .5vw .7vw;
+        &:focus{
+            box-shadow: 0 0 0 0.12rem;
+        }
+    }
+    .navbar .navbar-nav{
+        display: flex;
+        align-items: stretch;
+    }
+    .navbar .navbar-nav .nav-item{
+        font-size: 2.5vw;
+        & > .nav-link.active::after{
+            height: 1px;
+            margin-bottom: .5vw;
+        }
+        & > .nav-link{
+            padding: 2.5vw 0;
+        }
+    }
+    .navbar .dropdown-item{
+        font-size: 4vw;
+    }
+    /* navbar */
+    /* banner */
+    #banner .banner-contents .sub-container .text-auto-effect .main-heading-text,
+    #banner .banner-contents .sub-container .auto-text-blank-span,
+    #banner .typed-cursor,
+    #banner .banner-contents .para span,
+    #banner .banner-contents .sub-container h2{
+        -webkit-text-stroke: .25px var(--Clor-darkWhite);
+    }
+    #banner .banner-contents .para span{
+        font-size: 1.6vw;
+        letter-spacing: .1rem;
+    }
+    /* banner */
+    /* services */
+    #services .col-lg-4{
+        width: 100%;
+        margin-top: 5%;
+    }
+    #services .service-contents{
+        border-top: 2px solid var(--Clor-lightBlack);
+        padding: 3vw;
+        & > h4{
+            font-size: 3.6vw;
+            margin: 2vw 0;
+        }
+        & > p{
+            font-size: 2.5vw;
+        }
+    }
+    /* services */
+    /* about */
+    #about .about-contents{
+        flex-direction: column;
+        & > .left{
+            margin-bottom: 4vw;
+            & > h4{
+                font-size: 3.8vw;
+            }
+            & > p{
+                font-size: 2.4vw;
+                line-height: 3.5vw;
+                margin-bottom: 1vw;
+            }
+            & > .more{
+                margin: 2.5vw 0;
+                & > a{
+                    font-size: 2.5vw;
+                }
+            }
+        }
+        & > .right > .img {
+            width: 85%;
+            margin: 2vw 0;
+        }
+    }
+    /* about */
+    /* achivements */
+    #achivements .row .achivements-contents .counter-parent .counter-child p{
+        margin-bottom: 1vw;
+        font-size: 2.4vw;
+    }
+    #achivements .achivements-contents{
+        margin-bottom: 1.5vw;
+        padding: 3vw;
+        border-radius: 30px;
+    }
+    #achivements .row .achivements-contents .counter-parent .counter-child .texts h4,
+    #achivements .row .achivements-contents .counter-parent .counter-child .texts h4{
+        font-size: 3.8vw;
+    }
+    /* achivements */
+    /* difference */
+    #difference .row{
+        justify-content: center;
+    }
+    #difference .diff-contents{
+        width: 70%;
+        padding: 4vw;
+        & > .diff-containers{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5vw;
+        }
+    }
+    #difference .diff-containers .diff-main{
+        width: 100%;
+        border-radius: 7px;
+        & > .header{
+            & > h4{
+                font-size: 3.5vw;
+                margin-bottom: 1vw;
+            }
+            & > span{
+                font-size: 3vw;
+                padding: 1.5vw;
+            }
+        }
+        & > .lists > ul > li{
+            font-size: 2.5vw;
+            padding: 2vw 0;
+        }
+    }
+    .diff-divider{
+        position: relative;
+        width: 100%;
+        & > .divider-line{
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #000, transparent);
+            right: 0;
+        }
+        & > .divider-line2{
+            position: absolute;
+            width: 40%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #000, transparent);
+            left: 0;
+        }
+        & > .vs-circle{
+            padding: 4vw;
+            font-size: 3vw;
+        }
+    }
+    /* difference */
+    /* portfolio */
+    #portfolio .portfolio-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10vw;
+        & > .portfolio-item{
+            width: 85%;
+            height: fit-content;
+        }
+    }
+    #portfolio .portfolio-intro p{
+        font-size: 2.5vw;
+    }
+    #portfolio .portfolio-tag{
+        font-size: 1.4vw;
+        padding: 1vw;
+    }
+    #portfolio .portfolio-content{
+        border-radius: 7px;
+        & > h4{
+            font-size: 4.4vw;
+        }
+        & > p{
+            font-size: 2.4vw;
+        }
+    }
+    /* portfolio */
+    /* testimonials */
+    #testimonials .testimonials{
+        max-width: 90%;
+    }
+    #testimonials .testimonials .testimonials-item{
+        margin-bottom: 10vw;
+        & > .testimonials-content{
+            border-left: 2px solid var(--Clor-lightBlack);
+            border-radius: 7px;
+            & > p{
+                font-size: 2.2vw;
+            }
+            & > .testimonials-client > .testimonials-avatar{
+                font-size: 2.4vw;
+                width: 8vw;
+                height: 8vw;
+                border: 1px solid var(--Clor-black);
+            }
+            & > .testimonials-client > .testimonials-details{
+                & > h4{
+                    font-size: 2.5vw;
+                    margin-bottom: .25rem;
+                }
+                & > p{
+                    font-size: 2.3vw;
+                }
+            }
+        }
+    }
+    #testimonials .testimonials .testimonials-item:nth-child(even) .testimonials-content{
+        border-left: none;
+        border-right: 2px solid var(--Clor-black);
+    }
+    .testimonials-gap {
+        & > span > i{
+            padding-left: 1.5vw;
+        }
+    }
+    #testimonials .odd {
+        & > span > i{
+            padding-left: 0;
+            padding-right: 1.5vw;
+        }
+    }
+    /* testimonials */
+    /* contact */
+    #contact .social-section{
+        margin-bottom: 0;
+        & > h4{
+            font-size: 2.8vw;
+            letter-spacing: 1px;
+            margin-bottom: 4vw;
+        }
+    }
+    #contact .social-section .social-links .social-link{
+        transform: translate(0) !important;
+        width: 18%;
+        padding: 2vw;
+        & > .social-icon{
+            font-size: 2.5vw;
+        }
+        & > span{
+            font-size: 2.4vw;
+        }
+    }
+    /* contact */
+    /* footer */
+    #footer .footer-contents{
+        & > h4{
+            font-size: 3vw !important;
+        }
+        & > p{
+            font-size: 2.5vw;
+            text-align: center;
+        }
+        & > .img{
+            display: flex;
+            justify-content: center;
+            margin: 2vw 0;
+        }
+        & > .img > img{
+            width: 25%;
+        }
+    }
+    #footer .footer-contents ul{
+        padding-left: 1rem;
+        & > li{
+            font-size: 2.5vw;
+        }
+    }
+    #footer .width50{
+        width: 50%;
+        margin: 5vw 0 5vw 0;
+    }
+    #footer .grid-it-center{
+        display: flex;
+        justify-content: left;
+    }
+    #footer .footer-contents .social{
+        display: flex;
+        justify-content: center;
+        & > .follow-us{
+            margin-left: 8vw;
+            padding: 0;
+            & > h4{
+                font-size: 3vw;
+                text-align: center;
+                margin-bottom: 3vw;
+            }
+            & > ul > li a{
+                width: 5vw;
+                height: 5vw;
+                & > span{
+                    font-size: 2.5vw;
+                }
+            }
+        }
+    }
+    #footer .branding a{
+        margin-bottom: 3vw;
+        &::before{
+            height: 1px;
+        }
+        & > h4{
+            font-size: 3.5vw;
+            letter-spacing: .5rem;
+            margin-bottom: 0;
+        }
+        & > span{
+            font-size: 3.3vw;
+        }
+    }
+    .copyright{
+        font-size: 1.5vw;
+    }
+    .whatsapp-button{
+        width: 9vw;
+        height: 9vw;
+        font-size: 3.2vw;
+    }
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+            box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+    }
+    /* footer */
+}
