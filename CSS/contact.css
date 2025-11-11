@@ -584,5 +584,43 @@
     .tea-section .tea-footer p{
         font-size: 2.8vw;
     }
+    .contact-details .details-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-details .info-item .info-content{
+        & > h4{
+            font-size: 3.8vw;
+        }
+        & > p{
+            font-size: 2.5vw;
+            font-weight: 600;
+        }
+    }
+    .contact-details .details-visual{
+        padding: 5vw;
+    }
+    .contact-details .cta-box{
+        padding: 4vw;
+        & > h4{
+            font-size: 4.5vw;
+        }
+        & > p{
+            margin: 2vw;
+            font-size: 3.8vw;
+        }
+    }
+    .contact-details .office-hours h4{
+        font-size: 5vw;
+    }
+    .contact-details .day{
+        font-size: 3.5vw;
+    }
+    .contact-details .time{
+        font-size: 3.5vw;
+    }
+    .contact-details .cta-button{
+        padding: 2vw 4vw;
+    }
 }
 /* responsiveness */

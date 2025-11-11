@@ -34,12 +34,22 @@
         #preloader{
         width: 100vw;
         height: 100vh;
-        background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
-        filter: grayscale(100%);
-        background-size: 50%;
+        background: var(--Clor-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         z-index: 9999;
+        & > .spinner{
+          width: clamp(2.5rem, 1.786rem + 3.571vw, 7.5rem);
+          aspect-ratio: 1;
+          border-radius: 50%;
+          border: clamp(0.25rem, 0.179rem + 0.357vw, 0.75rem) solid;
+          border-color: black white;
+          animation: preloader 1s infinite forwards;
         }
+      }
+      @keyframes preloader {to{transform: rotate(.5turn)}}
         #banner{
           min-height: 50vh;
         }
@@ -82,7 +92,7 @@
 </head>
 <body>
     <!-- preloader -->
-    <div id="preloader"></div>
+    <div id="preloader"><div class="spinner"></div></div>
     <!-- preloader -->
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg">
@@ -94,7 +104,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="nav-parent">
             <li class="nav-item">
-                <a class="nav-link magnet active" aria-current="page" href="./index.html" style="color: #000; font-weight: 900; border-bottom: 3px solid #000;">Home</a>
+                <a class="nav-link magnet active" aria-current="page" href="./index.html" style="color: #000; font-weight: 900; border-bottom: 2px solid #000;">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link magnet" href="./services.html">Services</a>

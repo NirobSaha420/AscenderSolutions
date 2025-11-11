@@ -218,80 +218,39 @@ a{
 .hover-y10:hover{
     transform: translateY(-10px);
 }
-@keyframes appear-left{
-    from{
-        opacity: 0;
-        transform: translateX(-15vw);
-        scale: 0.7;
+/* prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .animation-appear-left,
+    .animation-appear-right, 
+    .animation-appear-bottom,
+    .animation-appear-top {
+      opacity: 1 !important;
+      scale: 1 !important;
+      transform: none !important;
+      animation: none !important;
     }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-        scale: 1;
-    }
-}
-@keyframes appear-right{
-    from{
-        opacity: 0;
-        transform: translateX(15vw);
-        scale: 0.7;
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0);
-        scale: 1;
-    }
-}
-@keyframes appear-bottom{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@keyframes appear-top{
-    from{
-        transform: translateY(-10vw);
-        scale: 0.5;
-        opacity: 0;
-    }
-    to{
-        transform: translate(0);
-        scale: 1;
-        opacity: 1;
-    }
-}
-.animation-appear-left{
-    animation: appear-left linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 35%;
-}
-.animation-appear-right{
-    animation: appear-right linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 35%;
-}
-.animation-appear-bottom{
-    animation: appear-bottom linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 30%;
-}
-.animation-appear-top{
-    animation: appear-top linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-}
+  }
+/* prefers reduced motion */
 /* preloader */
 #preloader{
     width: 100vw;
     height: 100vh;
-    background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
-    filter: grayscale(100%);
-    background-size: 50%;
+    background: var(--Clor-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 9999;
-}
+    & > .spinner{
+      width: clamp(2.5rem, 1.786rem + 3.571vw, 7.5rem);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: clamp(0.25rem, 0.179rem + 0.357vw, 0.75rem) solid;
+      border-color: black white;
+      animation: preloader 1s infinite forwards;
+    }
+  }
+  @keyframes preloader {to{transform: rotate(.5turn)}}
 /* preloader */
 /* navbar */
 .navbar{
@@ -299,13 +258,13 @@ a{
     position: fixed;
     z-index: 999;
     padding: 0vw 5vw;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 
         0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 0 10px 5px rgba(0, 0, 0, 0.05);
+        inset 0 0 10px 5px rgba(0, 0, 0, 0.08);
 }
 .navbar .navbar-brand{
     display: flex;
@@ -807,7 +766,7 @@ a{
 .testimonials-item {
     display: flex;
     width: 100%;
-    margin-bottom: 5vw;
+    margin-bottom: 8vw;
     align-items: center;
     z-index: 2;
 }

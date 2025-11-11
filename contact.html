@@ -33,20 +33,30 @@
         *{
         font-display: swap;
         }
-      #preloader{
+        #preloader{
         width: 100vw;
         height: 100vh;
-        background: var(--Clor-white) url(../images/preloader.gif) no-repeat center center;
-        filter: grayscale(100%);
-        background-size: 50%;
+        background: var(--Clor-white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         z-index: 9999;
+        & > .spinner{
+          width: clamp(2.5rem, 1.786rem + 3.571vw, 7.5rem);
+          aspect-ratio: 1;
+          border-radius: 50%;
+          border: clamp(0.25rem, 0.179rem + 0.357vw, 0.75rem) solid;
+          border-color: black white;
+          animation: preloader 1s infinite forwards;
+        }
       }
+      @keyframes preloader {to{transform: rotate(.5turn)}}
     </style>
 </head>
 <body>
   <!-- preloader -->
-  <div id="preloader"></div>
+  <div id="preloader"><div class="spinner"></div></div>
   <!-- preloader -->
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg">
@@ -113,7 +123,7 @@
         <div class="contact-options">
             <div class="contact-option box-shadow-black hover-y10 animation-appear-left">
                 <div class="left">
-                  <span class="magnet"><i class="fas fa-phone-alt"></i></span>
+                  <span class="magnet"><i class="fa-solid fa-phone"></i></span>
                 </div>
                 <div class="diff-divider">
                   <div class="divider-line"></div>
@@ -166,7 +176,7 @@
         <div class="details-info animation-appear-left">
             <div class="info-item">
                 <div class="info-icon magnet">
-                    <i class="fas fa-map-marker-alt"></i>
+                  <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div class="info-content">
                     <h4>Our Office</h4>
@@ -175,7 +185,7 @@
             </div>
             <div class="info-item">
                 <div class="info-icon magnet">
-                    <i class="fas fa-clock"></i>
+                  <i class="fa-solid fa-clock"></i>
                 </div>
                 <div class="info-content">
                     <h4>Business Hours</h4>
@@ -184,7 +194,7 @@
             </div>
             <div class="info-item">
                 <div class="info-icon magnet">
-                    <i class="fas fa-headset"></i>
+                  <i class="fa-solid fa-headset"></i>
                 </div>
                 <div class="info-content">
                     <h4>Support</h4>
